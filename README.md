@@ -5,5 +5,3 @@ The files interrupter and interruptee are used to synch the two raspberry pis by
 the start of video capture from one camera and enabling capture feed from the other one.
 
 twocam.cpp was used to see how fast is two camera feed in a raspberry pi
-
-

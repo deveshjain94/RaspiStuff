@@ -1,0 +1,21 @@
+Setting yp the LCD Screen :
+ http://cooljc.me.uk/?p=64
+
+Ignore Step - 5
+
+Clone this repo - https://github.com/tasanakorn/rpi-fbcp
+
+cd rpi-fbcp
+mkdir build
+cd build
+cmake ..
+make
+sudo install fbcp /etc/init.d/fbcp
+sudo service fbcp start - To share the primary screen on TFT
+sudo update-rc.d fbcp defaults - Autostart
+sudo update-rc.d fbcp remove - Disable autostart
+
+Reference : 
+https://github.com/notro/fbtft-spindle/wiki/FBTFT-image#fbcp---framebuffer-copy
+https://github.com/tasanakorn/rpi-fbcp
+http://cooljc.me.uk/?p=64
